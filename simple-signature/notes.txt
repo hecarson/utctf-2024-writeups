@@ -1,0 +1,12 @@
+Computing signature is done by m^d
+To get signature of m, pick an r
+m' = r^e * m
+(m')^d = r * m^d
+(m')^d * r^(-1) = m^d
+
+Each time a message is inputted, a counter is added to the message before calculating signature, counter starts at 0
+New message-signature pair at the end needs to account for counter
+
+Alternate solution is to get signature of m, and then input m-1 for the new message using the same signature
+
+utflag{a1m05t_t3xtb00k_3x3rc153}
